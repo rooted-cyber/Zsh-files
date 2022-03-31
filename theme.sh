@@ -9,10 +9,12 @@ thi() {
 	git clone https://github.com/ohmyzsh/ohmyzsh ~/.oh-my-zsh
 	cd ~
 	wget -q https://raw.githubusercontent.com/rooted-cyber/Zsh-files/main/.zshrc
+	wget -q https://raw.githubusercontent.com/rooted-cyber/Zsh-files/main/theme2.sh
 	chmod 700 -R *
 	chsh -s zsh
 	random
 	echo "Successfully installed"
+	}
 	tha() {
 	random
 	echo -n "Add Termux zsh theme and command shortcut (y|n) "
