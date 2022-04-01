@@ -32,3 +32,5 @@ alias sudo='proot -0'
 alias root="sudo"
 alias ai='apt reinstall'
 alias ls='lsd'
+alias cs='du -hs *'
+alias c='cd ..'

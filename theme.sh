@@ -1,5 +1,14 @@
-thi() {
+ct() {
+	cd ~
+	if [ -e .termux ];then
+	echo
+	else
+	mkdir .termux
+	fi
+	}
+	thi() {
 	apt install zsh -y
+	apt install lsd -y
 	cd ~
 	mkdir Rootedcyber
 	cd Rootedcyber
@@ -7,10 +16,10 @@ thi() {
 	git clone https://github.com/zsh-users/zsh-autosuggestions
 	git clone https://github.com/zsh-users/zsh-syntax-highlighting
 	git clone https://github.com/ohmyzsh/ohmyzsh ~/.oh-my-zsh
-	cd ~
-	wget -q https://raw.githubusercontent.com/rooted-cyber/Zsh-files/main/.zshrc
 	wget -q https://raw.githubusercontent.com/rooted-cyber/Zsh-files/main/theme2.sh
 	chmod 700 -R *
+	cd ~
+	wget -q https://raw.githubusercontent.com/rooted-cyber/Zsh-files/main/.zshrc
 	chsh -s zsh
 	random
 	echo "Successfully installed"
@@ -28,11 +37,12 @@ thi() {
 	btn() {
 	random
 	printf "Please wait..."
+	ct
 	cd ~/.termux
 	rm -f termux.properties > /dev/null 2>&1
 	wget -q https://raw.githubusercontent.com/rooted-cyber/Zsh-files/main/termux.properties
 	chmod 700 *
-	termux-reload-setting
+	termux-reload-settings
 	random
 	printf "Successfully added\n\n"
 	tha
