@@ -49,7 +49,8 @@ ct() {
 	}
 	cbtn() {
 		random
-		echo -e -n "Add Termux Button ( y|n ) "
+		printf %s "Add Termux Button ( y|n ) "
+printf "\033[0m"
 		read cb
 		case $cb in
 		y|Y)btn ;;
