@@ -1,3 +1,4 @@
+alias w='cd /sdcard;wget'
 alias a='apt install'
 alias p='python'
 alias p2='python2'
