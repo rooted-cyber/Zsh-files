@@ -20,7 +20,7 @@ ct() {
  git clone https://github.com/rooted-cyber/Zsh-files
  chmod -R 755 *
  cd Zsh*
- cp short* theme2* ~/Rooted*
+ cp short* ab ~/Rooted*
  cp .zshrc ~
 	chsh -s zsh
 	random
