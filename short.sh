@@ -31,3 +31,4 @@ alias af='apt show'
 alias ai='apt reinstall'
 alias cs='du -hs *'
 alias c='cd ..'
+alias ls="ls --color=auto"
